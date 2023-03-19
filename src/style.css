@@ -1,0 +1,104 @@
+body, html, #root, canvas{
+    margin: 0;
+    width:100%;
+    height:100%;
+
+}
+
+html{
+    background-color:#e01036;
+}
+
+
+.header{
+    top:0;
+    position:sticky;
+    height: 100px;
+    z-index: 2;
+    background-color: #cc0a27;
+}
+
+.header .logo{
+    height: 100px;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+
+.overlayText{
+    pointer-events:none;
+    position:absolute;
+    width: 30vw;
+    height: 100vh;
+    text-align: center;
+    transform: rotateZ(15deg);
+    transform: translateZ(-5);
+    top: 250px;
+    z-index: 1;
+}
+
+.overlayText span{
+    color:#f6d326;
+    position: relative;
+    font-size: 75px;
+    font-family: bodega;
+    right:10%;
+    top:-25%;
+    left:200%;
+}
+
+
+.waves{
+    transform: translateY(-1px);
+    position:relative;
+    aspect-ratio: 1080/540;
+    background-image: url(../public/wave.svg);
+    background-size: cover;
+    width: 100%;
+    height: 540px;
+}
+
+
+.description{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 500px;
+    margin-left: 15%;
+}
+
+.description .subTitle{
+    font-family: bodega;
+    font-size: 100px;
+    color:#f6d326;
+    padding-left: 10%;
+}
+
+.description .pharagraph{
+    font-family: bodega;
+    font-size: 25px;
+    color:antiquewhite;
+    padding-left: 10%;
+    text-align: justify;
+}
+
+.description button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px 10px 20px;
+    background-color: #cc0a27;
+    color: antiquewhite;
+    border: none;
+    border-radius: 15px;
+    font-family: bodega;
+    font-size: 25px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+@font-face {
+    font-family: bodega;
+    src: url(../public/font.ttf);
+}
